@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_surface"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM ACCESS"
+            android:textAppearance="@style/TextAppearance.PingMe.Eyebrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pusat kontrol izin"
+            android:textAppearance="@style/TextAppearance.PingMe.Title"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="Aktifkan akses yang diperlukan agar ping, kamera, dan audio berjalan stabil."
+            android:textAppearance="@style/TextAppearance.PingMe.Body"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@android:drawable/ic_menu_camera" app:tint="@color/pingme_pink_deep" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Kamera" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Memindai QR pasangan" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchKamera" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@drawable/ic_record_rose" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Mikrofon" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Merekam alarm kustom" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchMikrofon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@drawable/ic_gallery_rose" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Media" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Mengunggah foto dan audio" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchPenyimpanan" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@android:drawable/ic_dialog_info" app:tint="@color/pingme_pink_deep" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Notifikasi" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Menjaga koneksi ping aktif" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchNotifikasi" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:text="RELIABILITY"
+            android:textAppearance="@style/TextAppearance.PingMe.Eyebrow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@android:drawable/ic_menu_view" app:tint="@color/pingme_pink_deep" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Tampil di atas aplikasi" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Menampilkan ping masuk" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchOverlay" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_soft_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_icon_tile" android:contentDescription="@null" android:padding="9dp" android:src="@android:drawable/ic_lock_power_off" app:tint="@color/pingme_pink_deep" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="Optimasi baterai" android:textColor="@color/pingme_charcoal" android:textSize="15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Mencegah layanan dihentikan" android:textColor="@color/pingme_cocoa_soft" android:textSize="11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchBaterai" android:layout_width="wrap_content" android:layout_height="wrap_content" app:thumbTint="@color/switch_thumb_tint" app:trackTint="@color/switch_track_tint" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

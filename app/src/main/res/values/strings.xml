@@ -1,0 +1,10 @@
+<resources>
+    <string name="dashboard_orb_description">Ornamen hati tiga dimensi PingMe</string>
+    <string name="dashboard_orb_description_high">Ornamen kristal PingMe dengan efek tiga dimensi penuh</string>
+    <string name="dashboard_orb_description_medium">Ornamen kristal PingMe dengan efek tiga dimensi ringan</string>
+    <string name="dashboard_orb_description_low">Ornamen kristal PingMe versi hemat daya</string>
+    <string name="app_name">PingMe</string>
+    <string name="profile_settings_description">Buka pusat kontrol izin</string>
+    <string name="scanner_back_description">Kembali</string>
+    <string name="couple_photo_description">Foto pasangan</string>
+</resources>

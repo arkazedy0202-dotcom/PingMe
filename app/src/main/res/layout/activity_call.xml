@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_call_ambient"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/tvCallStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bg_status_rose"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="PING MASUK DARI SI DIA"
+        android:textColor="@color/pingme_pink_deep"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/glowView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:alpha="0.62"
+        android:background="@drawable/bg_aura_glow"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/heartSurface"
+        app:layout_constraintEnd_toEndOf="@id/heartSurface"
+        app:layout_constraintStart_toStartOf="@id/heartSurface"
+        app:layout_constraintTop_toTopOf="@id/heartSurface" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/heartSurface"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="38dp"
+        app:cardBackgroundColor="#EFFFFFFF"
+        app:cardCornerRadius="52dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCallStatus"
+        app:strokeColor="#CFFFFFFF"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/ivHeartPulse"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center"
+            android:contentDescription="Ping masuk"
+            android:src="@drawable/ic_love"
+            app:tint="@color/pingme_pink" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/messageEyebrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.08"
+        android:text="PESAN UNTUKMU"
+        android:textColor="@color/pingme_text_muted"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heartSurface" />
+
+    <TextView
+        android:id="@+id/tvPingMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="5"
+        android:text="Ping masuk"
+        android:textColor="@color/pingme_charcoal"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageEyebrow" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStopAlarm"
+        style="@style/Widget.PingMe.Button.Primary"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="36dp"
+        android:text="Matikan alarm dan buka PingMe"
+        app:icon="@drawable/ic_close_rose"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

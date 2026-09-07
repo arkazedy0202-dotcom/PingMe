@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dashboard_orb_size">112dp</dimen>
+    <dimen name="dashboard_orb_margin_end">2dp</dimen>
+    <dimen name="dashboard_orb_margin_top">8dp</dimen>
+</resources>

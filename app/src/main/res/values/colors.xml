@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PingMe premium light palette. Pink and pearl remain the core identity. -->
+    <color name="pingme_pink">#FFD76480</color>
+    <color name="pingme_pink_deep">#FFB84E69</color>
+    <color name="pingme_rose">#FFC85A74</color>
+    <color name="pingme_dusty_rose">#FFD98A9F</color>
+    <color name="pingme_soft_coral">#FFE9989F</color>
+    <color name="pingme_mauve">#FF8E6974</color>
+    <color name="pingme_pink_soft">#FFF7D8E1</color>
+    <color name="pingme_blush">#FFFFEDF2</color>
+    <color name="pingme_cream">#FFFFF7F9</color>
+    <color name="pingme_pearl">#FFFFFBFC</color>
+    <color name="pingme_surface">#FFFFFFFF</color>
+    <color name="pingme_surface_raised">#FFFFFDFE</color>
+    <color name="pingme_charcoal">#FF352A2E</color>
+    <color name="pingme_cocoa">#FF4E3C43</color>
+    <color name="pingme_cocoa_soft">#FF7F6A72</color>
+    <color name="pingme_text_muted">#FF937E85</color>
+    <color name="pingme_outline">#FFE9D9DE</color>
+    <color name="pingme_outline_strong">#FFDCC4CB</color>
+    <color name="pingme_nav_inactive">#FFB9A5AC</color>
+    <color name="pingme_champagne">#FFC3A15E</color>
+    <color name="pingme_error">#FFB63E58</color>
+    <color name="pingme_error_soft">#FFFFE8ED</color>
+    <color name="pingme_disabled">#FFE8DDE1</color>
+    <color name="pingme_on_disabled">#FFA9949B</color>
+    <color name="purple_200">#FFF7D8E1</color>
+    <color name="purple_500">#FFD76480</color>
+    <color name="purple_700">#FFB84E69</color>
+    <color name="teal_200">#FFFFEDF2</color>
+    <color name="teal_700">#FF8E6974</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

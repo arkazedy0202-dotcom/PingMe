@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PremiumOrbView">
+        <attr name="adaptiveQuality">
+            <enum name="auto" value="0" />
+            <enum name="high" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="low" value="3" />
+        </attr>
+        <attr name="adaptiveMotionEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingLoveFieldView">
+        <attr name="adaptiveQuality" />
+        <attr name="adaptiveMotionEnabled" />
+    </declare-styleable>
+</resources>

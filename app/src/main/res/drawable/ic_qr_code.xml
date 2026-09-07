@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Gambar QR Code yang disederhanakan agar estetik -->
+    <path
+        android:fillColor="#FF8FA3"
+        android:pathData="M3,3h8v8H3V3zM5,5v4h4V5H5zM13,3h8v8h-8V3zM15,5v4h4V5H15zM3,13h8v8H3V13zM5,15v4h4v-4H5zM13,13h2v2h-2V13zM15,15h2v2h-2V15zM17,13h4v2h-4V13zM13,17h4v4h-4V17zM17,17h2v2h-2V17zM19,19h2v2h-2V19zM19,15h2v2h-2V15z" />
+</vector>

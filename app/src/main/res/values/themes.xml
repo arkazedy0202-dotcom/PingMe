@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PingMe" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/pingme_pink</item>
+        <item name="colorPrimaryVariant">@color/pingme_pink_deep</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/pingme_pink_soft</item>
+        <item name="colorSecondaryVariant">@color/pingme_blush</item>
+        <item name="colorOnSecondary">@color/pingme_cocoa</item>
+        <item name="colorSurface">@color/pingme_surface</item>
+        <item name="colorOnSurface">@color/pingme_cocoa</item>
+        <item name="android:colorAccent">@color/pingme_pink</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColorPrimary">@color/pingme_charcoal</item>
+        <item name="android:textColorSecondary">@color/pingme_cocoa_soft</item>
+        <item name="colorError">@color/pingme_error</item>
+        <item name="materialButtonStyle">@style/Widget.PingMe.Button.Primary</item>
+        <item name="textInputStyle">@style/Widget.PingMe.TextInputLayout</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.PingMe.MaterialAlertDialog</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/pingme_pearl</item>
+        <item name="android:navigationBarColor">@color/pingme_surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+</resources>

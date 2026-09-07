@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dashboard_ambient">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_nav_surface"
+        android:elevation="12dp"
+        android:paddingHorizontal="4dp"
+        app:itemActiveIndicatorStyle="@style/Widget.PingMe.BottomNavigation.ActiveIndicator"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemRippleColor="#2ED76480"
+        app:itemTextAppearanceActive="@style/TextAppearance.MaterialComponents.Caption"
+        app:itemTextAppearanceInactive="@style/TextAppearance.MaterialComponents.Caption"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dashboard_ambient"
+        android:elevation="20dp"
+        android:visibility="gone">
+
+        <com.example.pingme.ui.FloatingLoveFieldView
+            android:id="@+id/connectLoveField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.62"
+            android:importantForAccessibility="no"
+            app:adaptiveMotionEnabled="true"
+            app:adaptiveQuality="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivConnectLogo"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_pingme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvConnectEyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.09"
+            android:text="PINGME CONNECTION"
+            android:textColor="@color/pingme_pink_deep"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@id/tvConnectBrandLine"
+            app:layout_constraintStart_toEndOf="@id/ivConnectLogo" />
+
+        <TextView
+            android:id="@+id/tvConnectBrandLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dua akun, satu ruang."
+            android:textColor="@color/pingme_cocoa"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/ivConnectLogo"
+            app:layout_constraintStart_toStartOf="@id/tvConnectEyebrow" />
+
+        <TextView
+            android:id="@+id/tvConnectTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="-4dp"
+            android:text="Koneksikan\nakunmu."
+            android:textColor="@color/pingme_cocoa"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivConnectLogo" />
+
+        <TextView
+            android:id="@+id/tvConnectSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:text="Pindai kode pasangan untuk mulai berbagi ping dan momen."
+            android:textColor="@color/pingme_cocoa_soft"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvConnectTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardQR"
+            android:layout_width="224dp"
+            android:layout_height="224dp"
+            android:layout_marginTop="22dp"
+            app:cardBackgroundColor="@color/pingme_surface"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvConnectSubtitle"
+            app:strokeColor="@color/pingme_outline"
+            app:strokeWidth="1dp">
+
+            <ImageView
+                android:id="@+id/ivQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:contentDescription="Kode QR akun PingMe"
+                android:scaleType="fitCenter" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvBackupCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="monospace"
+            android:maxWidth="300dp"
+            android:singleLine="true"
+            android:text="UID: memuat..."
+            android:textColor="@color/pingme_cocoa_soft"
+            android:textIsSelectable="true"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardQR" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnScanQR"
+            style="@style/Widget.PingMe.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="22dp"
+            android:text="Scan QR pasangan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBackupCode"
+            app:layout_constraintVertical_bias="1"
+            app:rippleColor="#45FFFFFF" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
